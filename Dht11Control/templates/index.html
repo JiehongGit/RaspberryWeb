@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }}{% endblock %}
+{% block body %}
+   <div class="graph info-p">
+     <span class="info-text info-text-net">温度湿度监控</span>
+     <canvas id="net-graph" style="width:90%;height:75%;"></canvas>
+   </div>
+  <script type=text/javascript src="{{ url_for('static', filename='monitor.js') }}"></script>
+{% endblock %}
